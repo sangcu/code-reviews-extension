@@ -2,7 +2,7 @@
 This is a chrome extension to help people comment directly on github file and share to friends
 
 #How it work?
-![How it work!](https://raw.githubusercontent.com/sangcu/code-reviews-extension/master/demo.gif)
+![How it work!](https://raw.githubusercontent.com/sangcu/code-reviews-extension/master/screenshots/demo.gif)
 
 #Firebase Support
 Currently, this project keeping all data in firebase store with an limited concurrent to 100 connection for free account. Firebase support pubsub pattern so you can get real-time comments.  
