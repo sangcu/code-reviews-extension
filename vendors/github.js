@@ -62,7 +62,7 @@ GithubVendor.prototype.renderComments = function(comments) {
     comments.forEach((value, id) =>{
         var $line = $('#L' + value.line);
         $line.addClass('ci-comments');
-        $line.next(self.selectors.lineData).append($(this.components.comment(value.comment)).attr('ci-id',value.id).data(value));
+        $line.next(this.selectors.lineData).append($(this.components.comment(value.comment)).attr('ci-id',value.id).data(value));
     });
 }
 GithubVendor.prototype.removeComment = function(id) {

@@ -55,11 +55,10 @@ function Vendor() {
 
     proto.emit = function(eventName) {
         var emitInfo = Array.prototype.slice.call(arguments, 1);
-        var self = this;
         var advocate = this.events[eventName];
         if (!advocate) return;
-        advocate.forEach(function(handler) {
-            handler.apply(self, emitInfo);
+        advocate.forEach((handler) =>{
+            handler.apply(this, emitInfo);
         });
     }
 })();
