@@ -1,5 +1,5 @@
 $(function() {
-    function Review() {        
+    function Review() {
 
         var vendors = [];
         this.addVendor = function(vendor) {
@@ -8,9 +8,8 @@ $(function() {
         }
         this.start = function() {
             let domain = window.location.host;
-            let fileKey = $('.commit-tease-sha').attr('href').substr($('.commit-tease-sha').attr('href').lastIndexOf('/'));
 
-            if(!fileKey || !domain) return;
+            if (!domain) return;
 
             let vendor = vendors.filter(function(vendor) {
                 if (vendor.domain === domain) return true;
@@ -19,7 +18,11 @@ $(function() {
 
             if (!vendor) return;
 
+            let fileKey = vendor.engine.getFileKey();
+            if (!fileKey) return;
+
             let db = new Firebase('https://flickering-fire-9918.firebaseio.com/' + fileKey);
+
             db.on("child_added", function(snapshot) {
                 let data = snapshot.val();
                 let comment = {

@@ -69,3 +69,7 @@ GithubVendor.prototype.removeComment = function(id) {
     if(!id) return;
     $('[ci-id='+id+']').remove();
 }
+
+GithubVendor.prototype.getFileKey=function(){
+  return $('.commit-tease-sha').attr('href').substr($('.commit-tease-sha').attr('href').lastIndexOf('/'));
+}
