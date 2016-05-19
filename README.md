@@ -1,6 +1,8 @@
 # Code Reviews Tool
 This is a chrome extension to help people comment directly on github file and share to friends
 
+#Install
+Install from [Chrome Web Store](https://chrome.google.com/webstore/detail/code-comments/mdnaooeglljianffhlbnmljhdgnhfgac)
 #How it work?
 ![How it work!](https://raw.githubusercontent.com/sangcu/code-reviews-extension/master/screenshots/demo.gif)
 
