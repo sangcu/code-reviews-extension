@@ -1,11 +1,5 @@
 $(function() {
-    function Review() {
-        var parameters = {
-            id: window.location.pathname,
-            blob: $('.blob-wrapper'),
-            number: '.blob-num',
-            line: '.blob-code.blob-code-inner'
-        }
+    function Review() {        
 
         var vendors = [];
         this.addVendor = function(vendor) {
