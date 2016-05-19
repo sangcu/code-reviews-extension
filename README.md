@@ -18,4 +18,4 @@ This original support for Github. However, if you want to support Gitlab, Bitbuc
 All pull requests are welcome.
 
 #Licenses
-This project used to be released under MIT, but I you can do whatever you want.
+This project used to be released under MIT, but you can do whatever you want.
